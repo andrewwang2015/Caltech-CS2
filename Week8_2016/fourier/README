@@ -1,0 +1,22 @@
+The fourier transform for the pure sine wave would look like a step.
+
+________
+       |
+       |       (fourier transform)
+       |
+       |
+       |_________
+
+The discrete fourier transform for the pure sine wave would just have two peaks.
+
+
+|
+|
+|
+|
+                         |          (discrete fourier transform)
+                         |
+                         |
+                         |
+
+As the function gets more and more complicated, there will be more "steps" in the fourier transform and more peaks in the discrete fourier transform. 

@@ -1,0 +1,37 @@
+Sequence 1: Influenza A Virus
+
+A/Argentina/HNRG1150/2009
+Date of Collection: 6/30/2009
+Subtype: H1N1
+Species: Human
+
+TCAGTCGAAA TGAATGCCCC TAATTATCAC TATGAGGAAT GCTCCTGTTA TCCTGATTCT AGTGAAATCA 
+CATGTGTGTG CAGGGATAAC TGGCATGGCT CGAATCGACC GTGGGTGTCT TTCAACCAGA ATCTGGAATA 
+TCAGATAGGA TACATATG 
+
+
+Sequence 2: Influenza A Virus
+A/Mexico/InDRE2419/2011
+Date of Collection: 4/27/2011
+Subtype: H1N1
+Species: Human
+
+GTAATGACCG ATGGACCAAG TGATGGACAG GCCTCATACA AGATCTTCAA
+AATAGAAAAG GGAAAGATAG TCAAATCAGT CGAGATGAAT GCCCCTAATT 
+ATCACTATGA GGAATGCTCC TGTTATCCTG ATTCTAGTGA AATCACA 
+
+
+Alignment: 
+
+TCAGTCGAAATGAATGCCCCTAATTATCACTATGAGGAATGCTCC TGTTATCCTGATTCTAGTGAAATCACATGTGTGTGCAGGGATAACTGGCATGGCTCGAATCGACCGTGGGTGTCTTTCAACCAGAATCTGGAATATCAGATAGGATACATATG
+GTAAT GACC GA TGGACCAAGTGATGGACAGGCCTCATACAAGATCTTCAAAATAGAAAAGGGAAAG ATA GTCAAATCAGTCGAGA TGA ATGCCCCTAATTATCACTATGAGGAATGCTCCTGTTATCCTGATTCT AGTGAA AT CACA  
+**|*|s||**s||s||**||*|*|*||****|*|****||*|***t|*||******|****||*||||*s|*|s||*****|||*****|s||*s|||*|*|*|||***|**|**|*|***|*|**|****|||**||*|*|s||**|*s||s||*|ss
+
+
+For this, I compared two variant strains of the H1N1 virus in humans (both partial strains downloaded from the Influenza Research Database). These strains are taken from
+two different geographic locations (Mexico & Argentina) during two different flu seasons (2009 & 2011). We know that every flu season, strains of the same virus can change
+greatly which is why people get vaccinnated each year. Comparing & aligning sequences from different flu seasons as done above allows researchers to specifically look at the
+evolution of the virus' genome to predict what may happen in the future and to also use past vaccines to create new vaccines, changing what must be changed based on differences
+in DNA from the old virus to the new virus (as illustrated in the alignment). In the alignment above, we see that the lengths of the two partial strands are approximately equal
+but there are significant amount of mismatches that must be taken into consideration when designing a vaccine to target the later virus. In addition, we could have also looked at similar strands of a virus in two different species (i.e. human and avian) to observe similarities/differences that will also give insight on the best way to design a vaccine.
+

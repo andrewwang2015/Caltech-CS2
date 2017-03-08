@@ -1,0 +1,9 @@
+Which type of search to use is heavily dependent on the structure of the tree.
+A breadth first search should be used when the searched for item (solution) is not far from the root of the tree.  When the depth of the tree can vary, and one needs to search part of a tree for the particular item, it is generally a good approach to 
+use the BFS.  However, when the tree is very deep and solutions may be rare, a depth first search may be too time consuming and inefficient in which case a BFS would be better. If the tree is very wide, the BFS may take too much memory 
+(needs to store path) which  can be impractical. 
+
+An example regarding the use of stacks is one's computer undoing / backtracking an action. When a computer undoes something, it first undoes what was last done. This fulfills the LIFO principle.
+
+An example regarding the use of queues is an operating system. Operating systems often queue processes that are next in line to execute after a particular event before it occurs. The first process is executed and other processes called while 
+the first process is running are in line (ordered by the chronologial sequence they are called), waiting to be executed after the first process is done. This fulfills the FIFO principle. 

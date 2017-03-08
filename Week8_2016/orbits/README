@@ -1,0 +1,5 @@
+The forward euler has the orbit increasing as the time goes on which is not accurate. The particle gets farther and farther away as time goes on. Also note that the energy value increases over time (does not stay constant).
+
+The backwards euler does the opposite of the forward euler and has the orbit decrease as time goes on, which is also not accurate. The particle gets closer and closer, even to the point that it touches the center body. Also note that energy value decreases over time (does not stay constant).
+
+The symplectic euler solution appears to be the most accurate as the orbit seems to stay fixed as time goes on. This is supported by the consistent energy value (it hovers around -0.5 and does not increase without bound as forward euler does nor decrease without bound as backwards euler does).
