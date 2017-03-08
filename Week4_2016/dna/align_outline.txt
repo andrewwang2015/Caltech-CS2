@@ -1,0 +1,17 @@
+The base case is when one of the strings is empty. In the case where both strings are empty, return the align_result without arguments (vai default constructor). If one of the strings is empty and the other is not, return an align_result with score of the GAP_SCORE multiplied by how many characters are left in the nonempty string (because these additional characters of the non empty string must be filled with gaps from the empty string) and make the instruction of the align_result equal to symbol corresponding to the nonempty string concatennated with itself n times where n is the size of the nonempty string. 
+
+We shall make recursive calls to compare shorter strings. Given the original two strings, there are three things we can start out with. We can have no gaps, in which case we remove the last characters of both strings. The score would be 2 or -1 appended to the previous score, depending on whether or not it was a match or a mismatch, respectively. The other two things we can do is to gap one string and remove the last char from the other string or the other way around, returning an align_result with a score that is equal to the previous score -5. For each of these options, we make the inst equal to the previous inst appended with either '|', '*', 's', or 't' depending on which option it is. 
+
+The algorithm should work as follows. The body of the function will recursively call itself for the max of the score of the three align function calls (corresponding to the three options). The three function calls will correspond to the three choices outlined above (substring notation will be used). What this will do is get the max of the three possible choices, each choice getting the max of their three possibile choices, and so on until we get to a base case which returns actual values. This will effectively return the best scoring alignment (highest cumulative score).
+
+Brief summary:
+
+IF 
+	both strings empty, return default constructor for align_result
+ELSE IF 
+	one string is empty, return align_result with score (-5*size of nonempty string) and instructions (the nonempty string symbol n times where n = number of elements in nonempty string)
+ELSE
+	initialize align_results corresponding to the three options (gap one string, gap the other string, match the last character of both strings). Add the corresponding scores and concatenate corresponding instruction for the specific option.
+	return the option that has the highest score
+
+Note: Before every return, we memoize. 
